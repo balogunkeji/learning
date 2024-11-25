@@ -38,7 +38,7 @@ const HomeLayout = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
+      <ScrollView contentContainerStyle={{ flexGrow: 1, gap: 28 }}>
       <View style={styles.header}>
         <Image
           source={{ uri: menu }}
@@ -88,7 +88,26 @@ const HomeLayout = () => {
             bg={"#F09E5430"}
             linkColor={"#F09A59"}
           />
-          
+           <CardBig
+            title={"Peer Group Meetup"}
+            text={"Let’s open up to the  thing that matters amoung the people "}
+            link={"Join Now"}
+            icon={play}
+            img={people}
+            bg={"#FCDDEC"}
+            linkColor={"#EF5DA8"}
+          />
+          <CardBig
+            title={"Meditation"}
+            text={
+              "Aura is the most important thing that matters to you.join us on "
+            }
+            link={"06:00 PM"}
+            icon={time}
+            img={fire}
+            bg={"#F09E5430"}
+            linkColor={"#F09A59"}
+          />
         </View>
       </View>
       </ScrollView>
